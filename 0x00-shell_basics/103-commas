@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -A | sort -t / -k 2 | sed ":a;N;$!ba;s/\n/,/g"; echo
+ls -Ap | sort -k1.2 -t/ | tr "\n" "," | sed "s/,$/\n/"
